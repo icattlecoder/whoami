@@ -32,11 +32,11 @@ const (
 )
 
 var (
-	cert string
-	key  string
-	ca   string
-	port string
-	name string
+	cert   string
+	key    string
+	ca     string
+	port   string
+	name   string
 	apiKey string
 )
 
