@@ -37,6 +37,7 @@ var (
 	ca   string
 	port string
 	name string
+	apiKey string
 )
 
 func init() {
@@ -45,6 +46,7 @@ func init() {
 	flag.StringVar(&ca, "cacert", "", "give me a CA chain, enforces mutual TLS")
 	flag.StringVar(&port, "port", "80", "give me a port number")
 	flag.StringVar(&name, "name", os.Getenv("WHOAMI_NAME"), "give me a name")
+	flag.StringVar(&apiKey, "apikey", os.Getenv("API_KEY"), "give me a api key")
 }
 
 var upgrader = websocket.Upgrader{
